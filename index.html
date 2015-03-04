@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <base href="/" />
+        <meta charset="utf-8">
+        <title>Angular</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+        <link rel="stylesheet" href="css/bootstrap-superhero.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body ng-app="app">
+        <div id="app" ui-view class="container">
+            
+        </div>
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <!-- App -->
+        <script src="app.js"></script>
+        <script src="app.router.js"></script>
+        <script src="app.controller.js"></script>
+        <!-- /App -->
+        <!-- Modules -->
+        
+        <!-- Core -->
+        <script src="modules/core/core.module.js"></script>
+        <script src="modules/core/router/router.factory.js"></script>
+
+        <!-- Nav -->
+        <script src="modules/admin/nav/nav.module.js"></script>
+        <script src="modules/admin/nav/nav.controller.js"></script>
+
+        <!-- Home -->
+        <script src="modules/admin/home/home.module.js"></script>
+        <script src="modules/admin/home/home.controller.js"></script>
+        <script src="modules/admin/home/home.router.js"></script>
+        
+        <!-- Dashboard -->
+        <script src="modules/admin/dashboard/dashboard.module.js"></script>
+        <script src="modules/admin/dashboard/dashboard.controller.js"></script>
+        <script src="modules/admin/dashboard/dashboard.router.js"></script>
+
+        <!-- CLiente -->
+        <script src="modules/admin/cliente/cliente.module.js"></script>
+        <script src="modules/admin/cliente/cliente.controller.js"></script>
+        <script src="modules/admin/cliente/cliente.router.js"></script>
+
+
+        <!-- Public Home -->
+        <script src="modules/public/home/home.module.js"></script>
+        <script src="modules/public/home/home.router.js"></script>
+
+        <!-- /Modules -->
+    </body>
+</html>
