@@ -1,0 +1,13 @@
+<div class="header" >
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li ng-repeat="m in vm.menus" role="presentation" ui-sref-active="active">
+            <a ui-sref="{{m.name}}">
+                {{m.settings.title}}
+            </a>
+        </li>
+      </ul>
+    </nav>
+    <h3 class="text-muted">{{app.name}}</h3>
+</div>
+

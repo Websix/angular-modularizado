@@ -1,0 +1,33 @@
+<div class="jumbotron">
+  <h1 ng-repeat="c in vm.clientes">{{c.name}}</h1>
+  <form action="" method="POST" role="form">
+      <legend>Form title</legend>
+  
+      <div class="form-group">
+          <label for="">label</label>
+          <input type="text"  ng-change="vm.buscar()" class="form-control" ng-model="vm.cep" id="" placeholder="Input field">
+      </div>
+  
+      <p ng-hide="vm.endereco">loading</p>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <table class="table table-hover">
+      <thead>
+          <tr>
+              <th>Bairro</th>
+              <th>Logradouro</th>
+              <th>Uf</th>
+              <th>Localidade</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>{{vm.endereco.bairro}}</td>
+              <td>{{vm.endereco.logradouro}}</td>
+              <td>{{vm.endereco.uf}}</td>
+              <td>{{vm.endereco.localidade}}</td>
+          </tr>
+      </tbody>
+  </table>
+</div>

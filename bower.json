@@ -1,0 +1,27 @@
+{
+  "name": "anglmod",
+  "version": "0.1.0",
+  "authors": [
+    "Rubens Fernandes <rubensdrk@gmail.com>"
+  ],
+  "description": "Template base para Angular Modularizado",
+  "keywords": [
+    "Angular;Modular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "angular-ui-router": "~0.2.13",
+    "animate.css": "~3.2.1",
+    "bootstrap": "~3.3.2",
+    "foundation": "~5.5.1"
+  }
+}
