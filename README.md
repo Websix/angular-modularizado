@@ -12,10 +12,13 @@ we fell in love @angularjs @websix
 
 ###Steps  to add a module:###
 * Create a folder in module directory (admin or public) ex:
- ```/modules/admin/newModule```
+
+ /modules/admin/newModule
 
 * Create four files in the new folder:
-```newModule.controller.js newModule.html newModule.module.js newModule.router.js```
+
+newModule.controller.js newModule.html newModule.module.js newModule.router.js
+
 
 - newModule.module.js
 ```javascript
@@ -72,7 +75,7 @@ we fell in love @angularjs @websix
 ```
 
 * Edit app.js to include newModule
-```
+```javascript
     'use strict';
     angular.module('app', [
         'ui.router',
@@ -87,7 +90,7 @@ we fell in love @angularjs @websix
 ```
 
 * Add files to index.html
-```
+```html
     <!-- NewModule -->
     <script src="modules/admin/newModule/newModule.module.js"></script>
     <script src="modules/admin/newModule/newModule.controller.js"></script>
